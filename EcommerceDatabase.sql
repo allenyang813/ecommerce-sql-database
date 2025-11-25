@@ -338,7 +338,7 @@ CREATE TRIGGER refund_approval
 DELIMITER ;
 
 -- 4.3 Testing of Trigger 1
--- Converting returnStatus from pending to accepted
+-- CONVERTING returnStatus FROM PENDING TO ACCEPTED
 UPDATE ReturnedItem
 SET returnStatus = 'Accepted', refundAmount = 149.00
 WHERE returnID = 5;
